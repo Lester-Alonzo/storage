@@ -11,7 +11,7 @@ services:
   front:
     build: ./front
     ports:
-      - "80:5173"
+      - "5173:5173"
     container_name: "front"
     restart: always
 volumes:
