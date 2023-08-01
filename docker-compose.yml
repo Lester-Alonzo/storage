@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  back:
+    build: ./back
+    ports:
+      - "3003:3003"
+    container_name: "back"
+    restart: always
+    volumes:
+      - ./back:/app/back/files
+  front:
+    build: ./front
+    ports:
+      - "80:5173"
+    container_name: "front"
+    restart: always
+volumes:
+  back:
