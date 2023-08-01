@@ -7,7 +7,7 @@ services:
     container_name: "back"
     restart: always
     volumes:
-      - ./back:/app/back/files
+      - /media/back:/app/back/files
   front:
     build: ./front
     ports:

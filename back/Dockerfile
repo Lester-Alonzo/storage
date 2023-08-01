@@ -9,6 +9,7 @@ COPY .env ./.env
 COPY . .
 
 RUN npm install
+RUN npm run prisma:init
 RUN npm run prisma:migrate
 RUN npm run prisma:generate
 
