@@ -4,7 +4,7 @@ services:
     build: ./back
     ports:
       - "3003:3003"
-    container_name: "back"
+    container_name: "backstorage"
     restart: always
     volumes:
       - /media/back:/app/back/files
@@ -12,7 +12,7 @@ services:
     build: ./front
     ports:
       - "5173:5173"
-    container_name: "front"
+    container_name: "frontstorage"
     restart: always
 volumes:
   back:
