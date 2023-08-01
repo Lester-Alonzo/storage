@@ -7,5 +7,7 @@ COPY package*.json ./
 COPY .env ./.env
 COPY . .
 RUN npm install
+RUN npm run build
+RUN npm install dotenv
 
-CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "run", "start"]
