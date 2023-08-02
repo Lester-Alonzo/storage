@@ -1,3 +1,7 @@
+<script>
+	import {env} from '$env/dynamic/public'
+    console.log(env.PUBLIC_BASEURL)
+</script>
 <main>
     <!-- <form>
         <label for="">User Name</label>
@@ -18,7 +22,7 @@
         justify-content: center;
         align-items: center;
     }
-    form {
+    /* form {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -27,5 +31,5 @@
         height: 300px;
         border: 1px solid black;
         border-radius: 10px;
-    }
+    } */
 </style>

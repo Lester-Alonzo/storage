@@ -1,7 +1,7 @@
 FROM node
-RUN mkdir /app
-RUN mkdir /app/back
-WORKDIR /app/back
+RUN mkdir -p /usr/src/app
+RUN mkdir -p /usr/src/app/back
+WORKDIR /usr/src/app/back
 
 COPY package*.json ./
 COPY prisma/ ./prisma/
